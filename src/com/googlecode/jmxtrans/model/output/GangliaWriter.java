@@ -221,7 +221,7 @@ public class GangliaWriter extends BaseOutputWriter {
 
         // Direct mapping when possible
         if (obj instanceof Long || obj instanceof Integer || obj instanceof Byte || obj instanceof Short)
-            return GMetricType.INT32;
+            return GMetricType.UINT32;
         if (obj instanceof Float)
             return GMetricType.FLOAT;
         if (obj instanceof Double)
